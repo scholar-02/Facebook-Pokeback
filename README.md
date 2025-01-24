@@ -1,6 +1,8 @@
 # Facebook-Pokeback
 Python-based bot for automatically sending pokes back to friends on Facebook. Designed for simplicity, efficiency, and easy setup using Selenium WebDriver.
 
+---
+
 ## 🤖 Automated Facebook Poke Back Bot
 
 This Python script automates the process of poking back friends on Facebook. It uses Selenium to interact with the Facebook UI, making it ideal for users who want to maintain their poke streaks without manual effort.
