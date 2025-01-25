@@ -78,7 +78,6 @@ python pokeBack.py
 ## 🌟 Features
 - Automatic poking back of all pending requests.
 - Lightweight and easy-to-configure script.
-- Customizable login and browser settings.
 - Minimal dependencies for quick setup.
 
 ---
