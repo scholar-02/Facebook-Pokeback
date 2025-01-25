@@ -40,8 +40,8 @@ python pokeBack.py
 2. A Chrome browser will open; log into Facebook manually.
 3. Once you’re logged in, return to the terminal and press Enter.
 4. The script will navigate to the Facebook Poke page and:
-  -- Continuously find and click “poke back” buttons (or similar) based on the search terms.
-  - Sleep and repeat in a loop to maintain your poke streaks.
+  * Continuously find and click “poke back” buttons (or similar) based on the search terms.
+  * Sleep and repeat in a loop to maintain your poke streaks.
 ---
 
 ## 🚀 How to Run
