@@ -16,38 +16,32 @@ Follow these steps to configure and run the bot:
 ### 1️⃣ Install Dependencies
 Ensure you have Python 3.8+ installed. Then, install the required libraries:
 ```bash
-pip install selenium
+pip install undetected-chromedriver
 ```
-
+Note: You no longer need to manually download ChromeDriver if you use undetected_chromedriver; it handles much of that automatically. However, if you prefer, you can still set your own driver path in code.
 ---
 
-### 2️⃣ Download WebDriver
-
-- Download the correct WebDriver for your browser and OS. For example:
-  - [ChromeDriver](https://sites.google.com/chromium.org/driver/)
-  - [GeckoDriver](https://github.com/mozilla/geckodriver) (for Firefox)
-- Place the WebDriver executable in your system's PATH or in the script directory.
-
+2️⃣ Create a search_terms.txt File
+Create a file named search_terms.txt in the same directory as pokeBack.py.
+Each line in the file should contain a single term, for example:
+```
+back
+backInYourLanguage
+```
+If no file is found, the script will prompt you to create one.
 ---
 
-### 3️⃣ Update Configuration
 
-Modify the script to include your Facebook login credentials and WebDriver path:
+3️⃣ Manually Log In to Facebook
+1. Run the script:
 ```python
-EMAIL = "your-email@example.com"
-PASSWORD = "your-password"
-WEBDRIVER_PATH = "/path/to/your/webdriver"
+python pokeBack.py
 ```
-
----
-
-### 4️⃣ Customize Facebook Poke URL
-
-Update the `POKE_URL` in the script with the correct Facebook poke page URL:
-```python
-POKE_URL = "https://www.facebook.com/pokes"
-```
-
+2. A Chrome browser will open; log into Facebook manually.
+3. Once you’re logged in, return to the terminal and press Enter.
+4. The script will navigate to the Facebook Poke page and:
+  - Continuously find and click “poke back” buttons (or similar) based on the search terms.
+  - Sleep and repeat in a loop to maintain your poke streaks.
 ---
 
 ## 🚀 How to Run
@@ -60,19 +54,6 @@ POKE_URL = "https://www.facebook.com/pokes"
    - Log into your Facebook account.
    - Navigate to the Facebook Poke page.
    - Automatically poke back all pending requests.
-
----
-
-## ⚙️ Customizations
-
-- **Run Frequency**  
-  You can schedule the bot to run periodically using a task scheduler (e.g., Cron for Linux or Task Scheduler for Windows).
-  
-- **Browser Options**  
-  Modify Selenium WebDriver settings for headless mode:
-  ```python
-  options.add_argument("--headless")
-  ```
 
 ---
 
