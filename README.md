@@ -29,10 +29,11 @@ back
 backInYourLanguage
 ```
 If no file is found, the script will prompt you to create one.
+
 ---
 
+## 🚀 How to Run
 
-3️⃣ Manually Log In to Facebook
 1. Run the script:
 ```python
 python pokeBack.py
@@ -42,18 +43,6 @@ python pokeBack.py
 4. The script will navigate to the Facebook Poke page and:
    * Continuously find and click “poke back” buttons (or similar) based on the search terms.
    * Sleep and repeat in a loop to maintain your poke streaks.
----
-
-## 🚀 How to Run
-
-1. Run the script:
-   ```bash
-   python pokeBack.py
-   ```
-2. The bot will:
-   - Log into your Facebook account.
-   - Navigate to the Facebook Poke page.
-   - Automatically poke back all pending requests.
 
 ---
 
