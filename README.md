@@ -49,7 +49,6 @@ python pokeBack.py
 ## 🛡️ Error Handling
 
 - If login fails, an error will be logged to the console.
-- If the poke page URL changes, the script will provide instructions to update it.
 
 ---
 
