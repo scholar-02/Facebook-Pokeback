@@ -1,3 +1,4 @@
+
 # Facebook-Pokeback
 Python-based bot for automatically sending pokes back to friends on Facebook. Designed for simplicity, efficiency, and easy setup using Selenium WebDriver.
 
@@ -18,17 +19,19 @@ Ensure you have Python 3.8+ installed. Then, install the required libraries:
 ```bash
 pip install undetected-chromedriver
 ```
-#### Note: You no longer need to manually download ChromeDriver if you use undetected_chromedriver; it handles much of that automatically. However, if you prefer, you can still set your own driver path in code.
+#### Note: With `undetected_chromedriver`, ChromeDriver setup is handled automatically.
+
 ---
 
 ### 2️⃣ Create a search_terms.txt File
-Create a file named search_terms.txt in the same directory as pokeBack.py.
-Each line in the file should contain a single term, for example:
+Create a file named `search_terms.txt` in the same directory as `pokeBack.py`.
+Each line in the file should contain a single term. Example:
 ```
-back
-back//InYourLanguage
+poke
+vissza
+bök
 ```
-If no file is found, the script will prompt you to create one.
+If the file is not found, the script will prompt you to create one.
 
 ---
 
@@ -41,43 +44,50 @@ python pokeBack.py
 2. A Chrome browser will open; log into Facebook manually.
 3. Once you’re logged in, return to the terminal and press Enter.
 4. The script will navigate to the Facebook Poke page and:
-   * Continuously find and click “poke back” buttons (or similar) based on the search terms.
+   * Dynamically find and click "poke back" buttons based on the search terms.
+   * Mimic human-like scrolling and clicking behavior.
    * Sleep and repeat in a loop to maintain your poke streaks.
 
 ---
 
 ## 🛡️ Error Handling
 
-- If login fails, an error will be logged to the console.
+- If the `search_terms.txt` file is missing, the script will notify you.
+- Console logs provide updates on progress and any errors encountered.
+- The script handles interruptions gracefully. Press `Ctrl + C` to stop it at any time.
 
 ---
 
 ## 📂 How It Works
 
-1. **Login Automation**: The bot uses Selenium WebDriver to log into your Facebook account.
-2. **Navigate to Poke Page**: It navigates to the Facebook poke page.
-3. **Automated Poking**: All pending poke requests are processed in a single run.
+1. **Search Terms**: Dynamically builds an XPath based on terms from `search_terms.txt`.
+2. **Login Automation**: Prompts you to log in manually for added security.
+3. **Navigate to Poke Page**: Automatically navigates to the Facebook Poke page.
+4. **Human-Like Behavior**: Mimics human-like scrolling and random clicking within the browser.
+5. **Continuous Operation**: Runs in a loop, ensuring consistent poke-back activity.
 
 ---
 
 ## 🔧 Requirements
 - Python 3.8+  
 - Selenium  
-- WebDriver for your browser (e.g., ChromeDriver, GeckoDriver)
+- `undetected_chromedriver`
 
 ---
 
 ## 🧰 Technologies Used
 - **Python**: Core language for automation.
 - **Selenium**: For browser interaction and automation.
-- **WebDriver**: To control the browser and simulate user actions.
+- **undetected_chromedriver**: To control the browser and avoid detection.
 
 ---
 
 ## 🌟 Features
-- Automatic poking back of all pending requests.
-- Lightweight and easy-to-configure script.
-- Minimal dependencies for quick setup.
+- Automatically pokes back all pending requests.
+- Handles dynamic Facebook UI changes with custom XPath logic.
+- Mimics human-like interactions to avoid detection.
+- Gracefully stops with `Ctrl + C`.
+- Lightweight and easy to configure.
 
 ---
 
