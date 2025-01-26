@@ -66,14 +66,6 @@ python pokeBack.py
 5. **Continuous Operation**: Runs in a loop, ensuring consistent poke-back activity.
 
 ---
-
-## 🔧 Requirements
-- Python 3.8+  
-- Selenium  
-- `undetected_chromedriver`
-
----
-
 ## 🧰 Technologies Used
 - **Python**: Core language for automation.
 - **Selenium**: For browser interaction and automation.
