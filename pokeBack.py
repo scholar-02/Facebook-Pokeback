@@ -62,7 +62,7 @@ def main():
     search_terms = load_search_terms("search_terms.txt")
     if not search_terms:
         print("[!] No search terms found in 'search_terms.txt'.")
-        print("    Please add terms (e.g. 'poke', 'vissza', 'bök') to that file.")
+        print("    Please add terms (e.g. 'back', 'backInYourLanguage') to that file.")
         return
 
     # Build dynamic XPath from those terms
