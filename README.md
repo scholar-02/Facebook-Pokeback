@@ -21,8 +21,7 @@ pip install undetected-chromedriver
 #### Note: You no longer need to manually download ChromeDriver if you use undetected_chromedriver; it handles much of that automatically. However, if you prefer, you can still set your own driver path in code.
 ---
 
-2️⃣ Create a search_terms.txt File
-Create a file named search_terms.txt in the same directory as pokeBack.py.
+2️⃣ Create a search_terms.txt File in the same directory as pokeBack.py.
 Each line in the file should contain a single term, for example:
 ```
 back
