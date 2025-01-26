@@ -18,7 +18,7 @@ Ensure you have Python 3.8+ installed. Then, install the required libraries:
 ```bash
 pip install undetected-chromedriver
 ```
-Note: You no longer need to manually download ChromeDriver if you use undetected_chromedriver; it handles much of that automatically. However, if you prefer, you can still set your own driver path in code.
+#### Note: You no longer need to manually download ChromeDriver if you use undetected_chromedriver; it handles much of that automatically. However, if you prefer, you can still set your own driver path in code.
 ---
 
 2️⃣ Create a search_terms.txt File
