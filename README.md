@@ -27,9 +27,8 @@ pip install undetected-chromedriver
 Create a file named `search_terms.txt` in the same directory as `pokeBack.py`.
 Each line in the file should contain a single term. Example:
 ```
-poke
-vissza
-bök
+back
+backInYourLanguage
 ```
 If the file is not found, the script will prompt you to create one.
 
