@@ -17,7 +17,7 @@ Follow these steps to configure and run the bot:
 ### 1️⃣ Install Dependencies
 Ensure you have Python 3.8+ installed. Then, install the required libraries:
 ```bash
-pip install undetected-chromedriver
+pip install selenium undetected-chromedriver
 ```
 #### Note: With `undetected_chromedriver`, ChromeDriver setup is handled automatically.
 
