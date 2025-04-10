@@ -136,7 +136,7 @@ def main():
                     print(f"[!] Error clicking element: {exc}")
 
             # Wait a random time before next iteration
-            wait_time = random.randint(15, 20)
+            wait_time = random.randint(60, 140)
             print(f"[+] Cycle complete. Waiting {wait_time} seconds before next check...")
             driver.refresh()
             time.sleep(wait_time)
