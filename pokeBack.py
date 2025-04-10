@@ -102,7 +102,7 @@ def main():
                 wait.until(EC.presence_of_element_located((By.XPATH, poke_back_xpath)))
             except:
                 print("[!] No matching elements found right now. Checking again soon.")
-                time.sleep(random.randint(30, 60))
+                time.sleep(random.randint(10, 20))
                 continue
 
             all_elements = driver.find_elements(By.XPATH, poke_back_xpath)
@@ -136,9 +136,11 @@ def main():
                     print(f"[!] Error clicking element: {exc}")
 
             # Wait a random time before next iteration
-            wait_time = random.randint(60, 120)
+            wait_time = random.randint(15, 20)
             print(f"[+] Cycle complete. Waiting {wait_time} seconds before next check...")
+            driver.refresh()
             time.sleep(wait_time)
+            
 
     except KeyboardInterrupt:
         print("\n[!] Process interrupted by user.")
